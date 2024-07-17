@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions;
+package com.mrbysco.emiprofessions;
 
 import net.fabricmc.api.ClientModInitializer;
 

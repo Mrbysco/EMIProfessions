@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions;
+package com.mrbysco.emiprofessions;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;

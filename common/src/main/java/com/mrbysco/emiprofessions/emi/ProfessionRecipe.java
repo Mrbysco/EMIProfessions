@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions.emi;
+package com.mrbysco.emiprofessions.emi;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.emi.emi.api.recipe.EmiRecipe;

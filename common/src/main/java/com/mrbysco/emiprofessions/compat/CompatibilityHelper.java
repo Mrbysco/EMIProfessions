@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions.compat;
+package com.mrbysco.emiprofessions.compat;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -10,7 +10,8 @@ import org.jetbrains.annotations.Nullable;
 public class CompatibilityHelper {
 	/**
 	 * Executes compatibility checks for the given ItemStack
-	 * @param stack The ItemStack to check
+	 *
+	 * @param stack      The ItemStack to check
 	 * @param profession The profession to check
 	 * @return The ItemStack after compatibility checks
 	 */

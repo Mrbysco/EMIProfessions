@@ -1,26 +1,26 @@
 {
   "schemaVersion": 1,
-  "id": "justenoughprofessions",
+  "id": "emiprofessions",
   "version": "${version}",
-  "name": "Just Enough Professions (JEP)",
-  "description": "Adds info about professions to JEI",
+  "name": "EMI Professions ",
+  "description": "Adds info about professions to EMI",
   "authors": [
     "Mrbysco",
     "ShyNieke"
   ],
   "contact": {
-    "homepage": "https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep",
-    "sources": "https://github.com/Mrbysco/JustEnoughProfessions",
-    "issues": "https://github.com/Mrbysco/JustEnoughProfessions/issues"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/emi-professions-emip",
+    "sources": "https://github.com/Mrbysco/EMIProfessions",
+    "issues": "https://github.com/Mrbysco/EMIProfessions/issues"
   },
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.mrbysco.justenoughprofessions.EMIProfessionsFabric"
+      "com.mrbysco.emiprofessions.EMIProfessionsFabric"
     ],
     "emi": [
-      "com.mrbysco.justenoughprofessions.emi.ProfessionPlugin"
+      "com.mrbysco.emiprofessions.emi.ProfessionPlugin"
     ]
   },
   "depends": {

@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions.platform.services;
+package com.mrbysco.emiprofessions.platform.services;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;

@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions;
+package com.mrbysco.emiprofessions;
 
 import net.minecraft.resources.ResourceLocation;
 import org.apache.logging.log4j.LogManager;

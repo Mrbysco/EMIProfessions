@@ -1,6 +1,6 @@
-package com.mrbysco.justenoughprofessions.emi;
+package com.mrbysco.emiprofessions.emi;
 
-import com.mrbysco.justenoughprofessions.platform.Services;
+import com.mrbysco.emiprofessions.platform.Services;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.EntityType;
@@ -16,13 +16,15 @@ import java.util.function.Function;
 
 /**
  * A record to hold the profession and the block stacks for the profession
- * @param profession The profession
+ *
+ * @param profession  The profession
  * @param blockStacks The workstation blocks for the profession
  */
 public record ProfessionEntry(VillagerProfession profession, List<ItemStack> blockStacks) {
 
 	/**
 	 * Get the villager entity for the profession
+	 *
 	 * @return The Villager entity
 	 */
 	@Nullable

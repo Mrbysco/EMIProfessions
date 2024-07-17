@@ -1,4 +1,4 @@
-package com.mrbysco.justenoughprofessions;
+package com.mrbysco.emiprofessions;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -7,20 +7,20 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderDispatcher;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.npc.Villager;
 import org.joml.Quaternionf;
 
 public class RenderHelper {
 	/**
 	 * Render the Villager entity on the screen
+	 *
 	 * @param guiGraphics The GuiGraphics instance
-	 * @param x The x position
-	 * @param y The y position
-	 * @param scale The scale of the entity
-	 * @param yaw The yaw of the entity
-	 * @param pitch The pitch of the entity
-	 * @param villager The Villager entity to render
+	 * @param x           The x position
+	 * @param y           The y position
+	 * @param scale       The scale of the entity
+	 * @param yaw         The yaw of the entity
+	 * @param pitch       The pitch of the entity
+	 * @param villager    The Villager entity to render
 	 */
 	public static void renderVillager(GuiGraphics guiGraphics, int x, int y, double scale, double yaw, double pitch, Villager villager) {
 		if (villager.level() == null) return;

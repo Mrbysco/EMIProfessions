@@ -1,7 +1,7 @@
-package com.mrbysco.justenoughprofessions.emi;
+package com.mrbysco.emiprofessions.emi;
 
-import com.mrbysco.justenoughprofessions.Constants;
-import com.mrbysco.justenoughprofessions.compat.CompatibilityHelper;
+import com.mrbysco.emiprofessions.Constants;
+import com.mrbysco.emiprofessions.compat.CompatibilityHelper;
 import dev.emi.emi.api.EmiEntrypoint;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;

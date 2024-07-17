@@ -1,7 +1,7 @@
-package com.mrbysco.justenoughprofessions.emi;
+package com.mrbysco.emiprofessions.emi;
 
-import com.mrbysco.justenoughprofessions.RenderHelper;
-import com.mrbysco.justenoughprofessions.platform.Services;
+import com.mrbysco.emiprofessions.RenderHelper;
+import com.mrbysco.emiprofessions.platform.Services;
 import dev.emi.emi.api.widget.DrawableWidget;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;

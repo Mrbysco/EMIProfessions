@@ -1,7 +1,7 @@
-package com.mrbysco.justenoughprofessions.platform;
+package com.mrbysco.emiprofessions.platform;
 
-import com.mrbysco.justenoughprofessions.Constants;
-import com.mrbysco.justenoughprofessions.platform.services.IPlatformHelper;
+import com.mrbysco.emiprofessions.Constants;
+import com.mrbysco.emiprofessions.platform.services.IPlatformHelper;
 
 import java.util.ServiceLoader;
 
