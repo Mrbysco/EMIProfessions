@@ -1,0 +1,33 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+issueTrackerURL="https://github.com/Mrbysco/JustEnoughProfessions/issues"
+license="MIT"
+
+[[mods]]
+modId="emiprofessions"
+version="${file.jarVersion}"
+displayName="EMI Professions (EMIP)"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/just-enough-professions-jep"
+authors="Mrbysco, ShyNieke"
+description='''
+Adds info about professions to EMI
+'''
+
+[[dependencies.justenoughprofessions]]
+modId="emi"
+type="REQUIRED"
+versionRange="[1.1.10,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.justenoughprofessions]]
+modId="neoforge"
+type="REQUIRED"
+versionRange="[21.0.76-beta,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.justenoughprofessions]]
+modId="minecraft"
+type="REQUIRED"
+versionRange="[1.21,1.22)"
+ordering="NONE"
+side="BOTH"
