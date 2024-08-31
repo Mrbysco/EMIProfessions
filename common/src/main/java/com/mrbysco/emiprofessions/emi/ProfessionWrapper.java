@@ -4,6 +4,7 @@ import com.mrbysco.emiprofessions.RenderHelper;
 import com.mrbysco.emiprofessions.platform.Services;
 import dev.emi.emi.api.widget.DrawableWidget;
 import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.npc.Villager;
 import net.minecraft.world.item.ItemStack;
@@ -19,6 +20,20 @@ public record ProfessionWrapper(ProfessionEntry entry) implements DrawableWidget
 	 */
 	public ResourceLocation getProfessionName() {
 		return Services.PLATFORM.getProfessionKey(entry.profession());
+	}
+
+	/**
+	 * Get the profession name for display.
+	 *
+	 * @return
+	 */
+	public Component getDisplayName() {
+		//Note: "Component.translatable(wrapper.getProfessionName().toLanguageKey())" cannot be used
+		// because it does not contain a translation value.
+		ResourceLocation professionKey = Services.PLATFORM.getProfessionKey(entry.profession());
+		String languageKey = professionKey.toLanguageKey();
+		if (languageKey.startsWith("minecraft.")) languageKey = languageKey.replace("minecraft.","");
+		return Component.translatable("entity.minecraft.villager." + languageKey);
 	}
 
 	/**
