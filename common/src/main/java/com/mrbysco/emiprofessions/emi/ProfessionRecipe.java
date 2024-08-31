@@ -68,7 +68,7 @@ public class ProfessionRecipe<T extends ProfessionWrapper> implements EmiRecipe 
 
 		@Override
 		public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float delta) {
-			String text = Screen.hasShiftDown() ? wrapper.getDisplayName().getString() : wrapper.getProfessionName().getPath();
+			String text = Screen.hasShiftDown() ? wrapper.getProfessionName().toString() : wrapper.getDisplayName().getString();
 			// Draw entity name
 			PoseStack poseStack = guiGraphics.pose();
 			poseStack.pushPose();
