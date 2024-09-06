@@ -1,1 +1,2 @@
-* Initial build made for EMI
+* Add i18n support courtesy of [LittleCircleOO](https://github.com/Mrbysco/EMIProfessions/pull/2) (Villager professions will now be translated with their proper names)
+* Improve villager rendering performance by only using one villager instance to render all villagers
