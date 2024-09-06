@@ -28,9 +28,7 @@ public record ProfessionWrapper(ProfessionEntry entry) implements DrawableWidget
 	 * @return
 	 */
 	public Component getDisplayName() {
-		//Note: "Component.translatable(wrapper.getProfessionName().toLanguageKey())" cannot be used
-		// because it does not contain a translation value.
-		ResourceLocation professionKey = Services.PLATFORM.getProfessionKey(entry.profession());
+		ResourceLocation professionKey = getProfessionName();
 		String languageKey = professionKey.toLanguageKey();
 		if (languageKey.startsWith("minecraft.")) languageKey = languageKey.replace("minecraft.","");
 		return Component.translatable("entity.minecraft.villager." + languageKey);
