@@ -49,7 +49,7 @@ public record ProfessionWrapper(ProfessionEntry entry) implements DrawableWidget
 		if (entityVillager != null) {
 			RenderHelper.renderVillager(draw, 22, 62, 25.0F,
 					38 - mouseX,
-					80 - mouseY,
+					15 - mouseY,
 					entityVillager);
 		}
 	}
