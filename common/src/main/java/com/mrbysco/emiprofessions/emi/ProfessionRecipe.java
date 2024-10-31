@@ -16,6 +16,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ProfessionRecipe<T extends ProfessionWrapper> implements EmiRecipe {
@@ -38,7 +39,12 @@ public class ProfessionRecipe<T extends ProfessionWrapper> implements EmiRecipe 
 
 	@Override
 	public List<EmiIngredient> getInputs() {
-		return List.of();
+		var inputs = new ArrayList<EmiIngredient>();
+		for (ItemStack itemStack : wrapper.getBlockStacks()){
+			var ingredient = Ingredient.of(itemStack);
+			inputs.add(EmiIngredient.of(ingredient));
+		}
+		return inputs;
 	}
 
 	@Override
