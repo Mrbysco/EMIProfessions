@@ -8,7 +8,7 @@ plugins {
 subprojects {
     apply plugin: 'java'
 
-    java.toolchain.languageVersion = JavaLanguageVersion.of(21)
+    java.toolchain.languageVersion = JavaLanguageVersion.of(17)
     java.withSourcesJar()
     java.withJavadocJar()
 
@@ -52,11 +52,11 @@ subprojects {
 
     tasks.withType(JavaCompile).configureEach {
         it.options.encoding = 'UTF-8'
-        it.options.getRelease().set(21)
+        it.options.getRelease().set(17)
     }
 
     processResources {
-        filesMatching(['pack.mcmeta', 'fabric.mod.json', 'neoforge.mods.toml', '*.mixins.json']) {
+        filesMatching(['pack.mcmeta', 'fabric.mod.json', 'mods.toml', '*.mixins.json']) {
             expand project.properties
         }
     }

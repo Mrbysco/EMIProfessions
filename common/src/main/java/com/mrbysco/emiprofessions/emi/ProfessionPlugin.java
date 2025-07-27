@@ -24,7 +24,7 @@ import java.util.Optional;
 
 @EmiEntrypoint
 public class ProfessionPlugin implements EmiPlugin {
-	private static final ResourceLocation UID = Constants.modLoc("jei_plugin");
+	private static final ResourceLocation UID = Constants.modLoc("emi_plugin");
 
 	private static final EmiTexture PROFESSION_ICON = new EmiTexture(Constants.modLoc("textures/gui/profession_icon.png"), 0, 0, 16, 16);
 	public static final EmiRecipeCategory PROFESSION = new EmiRecipeCategory(Constants.modLoc("professions"), PROFESSION_ICON);

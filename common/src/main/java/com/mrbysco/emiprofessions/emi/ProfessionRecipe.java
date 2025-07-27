@@ -1,6 +1,7 @@
 package com.mrbysco.emiprofessions.emi;
 
 import com.mojang.blaze3d.vertex.PoseStack;
+import com.mrbysco.emiprofessions.Constants;
 import dev.emi.emi.api.recipe.EmiRecipe;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.stack.EmiIngredient;
@@ -34,7 +35,7 @@ public class ProfessionRecipe<T extends ProfessionWrapper> implements EmiRecipe 
 	@Override
 	@Nullable
 	public ResourceLocation getId() {
-		return wrapper.getProfessionName();
+		return Constants.modLoc("/" + wrapper.getProfessionName().getNamespace() + "/" + wrapper.getProfessionName().getPath());
 	}
 
 	@Override

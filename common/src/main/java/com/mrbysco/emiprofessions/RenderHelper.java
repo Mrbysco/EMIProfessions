@@ -22,6 +22,7 @@ public class RenderHelper {
 	 * @param pitch       The pitch of the entity
 	 * @param villager    The Villager entity to render
 	 */
+	@SuppressWarnings({"deprecation", "resource"})
 	public static void renderVillager(GuiGraphics guiGraphics, int x, int y, double scale, double yaw, double pitch, Villager villager) {
 		if (villager.level() == null) return;
 		PoseStack poseStack = guiGraphics.pose();
@@ -38,7 +39,7 @@ public class RenderHelper {
 		villager.yHeadRotO = villager.getYRot();
 		villager.setXRot((float) -(pitch / 5.F));
 
-		poseStack.translate(0.0F, villager.getVehicleAttachmentPoint(villager).y(), 0.0F);
+		poseStack.translate(0.0F, villager.getMyRidingOffset(), 0.0F);
 		EntityRenderDispatcher entityRenderDispatcher = Minecraft.getInstance().getEntityRenderDispatcher();
 		entityRenderDispatcher.overrideCameraOrientation(new Quaternionf(0.0F, 0.0F, 0.0F, 1.0F));
 		entityRenderDispatcher.setRenderShadow(false);
