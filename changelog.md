@@ -1,1 +1,1 @@
-* Clear the cached villager used for rendering on world unload
+* Backport to 1.20.1 Forge and Fabric
