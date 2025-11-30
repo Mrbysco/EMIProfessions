@@ -92,7 +92,7 @@ if (System.getenv().CURSEFORGE_KEY) {
     task curseforge(type: net.darkhax.curseforgegradle.TaskPublishCurseForge) {
         apiToken = System.getenv().CURSEFORGE_KEY
 
-        def mainFile = upload(project.curseforge_id, jar)
+        def mainFile = upload(project.curseforge_id, reobfJar)
         mainFile.releaseType = 'release'
         mainFile.addGameVersion "NeoForge"
         mainFile.addGameVersion "Forge"
@@ -114,7 +114,7 @@ if (System.getenv().MODRINTH_KEY) {
         versionType = "release"
         versionName = "${mod_name} ${minecraft_version}"
         versionNumber = project.version
-        uploadFile = jar
+        uploadFile = reobfJar
         changelog = fileContents
         gameVersions = ["${minecraft_version}"]
         loaders = ["neoforge", "forge"]
