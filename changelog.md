@@ -1,1 +1,1 @@
-* Backport to 1.20.1 Forge and Fabric
+* Hopefully fix jar (Forge)
